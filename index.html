@@ -10,13 +10,13 @@
     <a href="mailto: superanimfx@gmail.com">إبلاغ يوسف </a>
     <marquee>هذا مكان لتكلم هذا رائع جدا</marquee>
     <button onclick="hi()"></button>
-    <form action="https://raw.githubusercontent.com/fxs1400/Post/refs/heads/main/Post.txt" method="post">
-        <input type="text">
+    <form action="post.txt" method="post">
+        <input type="text" name="msg">
         <input type="submit">
         </form>
     <script>
         function hi() {
-            fetch("https://fxs1400.github.io/Post/api").then(function (respone) {
+            fetch("post.txt").then(function (respone) {
                 return respone.text()
             }).then(function (data) {
                 alert(data);
